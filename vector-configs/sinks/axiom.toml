@@ -1,6 +1,6 @@
 [sinks.axiom]
   type = "axiom"
-  inputs = ["log_json"]
+  inputs = ["log_json", "fly_metrics"]
   token = "${AXIOM_TOKEN}"
   dataset = "${AXIOM_DATASET}"
 
