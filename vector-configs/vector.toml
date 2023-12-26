@@ -20,6 +20,7 @@
   endpoints = [ "https://api.fly.io/prometheus/${ORG-personal}/federate" ]
   auth.strategy = 'bearer'
   auth.token = '${ACCESS_TOKEN?}'
+  query.match = ['{app=~".+"}']
 
 [transforms.log_json]
   type = "remap"
